@@ -7,5 +7,3 @@ Languages Used: HTML, CSS, Bootstrap
 Deployed at: Github
 
 Editor Used: VS Code
-
-[Live Link](https://tanveer-99.github.io/responsive/)
