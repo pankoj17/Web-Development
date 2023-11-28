@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>my list</h1>
+        <ul id="mylist">
+            <li id="first" class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Neque, maxime consequuntur.</li>
+            <li class="item">Consectetur, porro odit?</li>
+            <li class="item">Perspiciatis, est? Porro.</li>
+            <li class="item">Ipsam, deserunt molestiae!</li>
+        </ul>
+    </div>
+    <script>
+        var items = document.getElementsByClassName('item');
+        for(var i=0;i<items.length;i++){
+            var item = items[i];
+            item.addEventListener('click', function(event){
+                event.target.parentNode.removeChild(event.target);
+            })
+        }
+    </script>
+</body>
+</html>

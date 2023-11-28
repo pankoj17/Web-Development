@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav li{
+            list-style: none;
+            padding: 10px;  
+        }
+        
+        nav li:hover{
+            background-color: brown;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+
+        }
+        nav{
+            height: 50px;
+            background-color: blue;
+            line-height: 30px;
+
+        }
+        nav > ul > li{
+            float: left;
+        }
+        nav > ul > li:hover >ul{
+            display: block;
+
+        }
+        .downop{
+            display: none;
+            position: absolute;
+            background-color: blue;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">link-1</a></li>
+            <li><a href="">link-2</a></li>
+            <li><a href="">link-3</a>
+                <ul class="downop">
+
+                    <li><a href="">link-5</a></li>
+                    <li><a href="">link-6</a></li>
+                    <li><a href="">link-7</a></li>
+                </ul>
+            </li>
+            <li><a href="">link-4</a></li>
+        </ul>
+    </nav>
+
+    <h1>First nav bar</h1>
+    <p>I am very excited</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* header */
+
+header {
+    background-color: rgba(255, 20, 147, 0.1);
+}
+
+/* navbar */
+
+.logo img {
+    width: 50%;
+}
+
+
+/* hero-section */
+
+#hero-section {
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.hero-image img {
+    margin-top: -50px;
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+}
+
+
+
+/* women jacket */
+.price {
+    color: orange;
+    font-size: 2rem;
+}
+#women-jacket, #men-jacket {
+    margin: 100px auto;
+}
+.card-image {
+    background-color: darkgrey;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.women-jacket-title, men-jacket-title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.icon {
+    width: 25%;
+    
+}
+@media only screen and (min-width: 600px) {
+    .women-jacket-title {
+        text-align: left;
+    }
+    #about-section .icon {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+#about-section {
+    margin: 150px auto;
+}
+
+
+
+.carousel {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+}
+.testimonial {
+    margin: 100px auto;
+}

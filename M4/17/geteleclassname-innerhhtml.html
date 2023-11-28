@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <article>
+                <ul id="items">
+                    <li>item-1</li>
+                    <li>item-2</li>
+                    <li>item-3</li>
+                    <li>item-4</li>
+                    <li>item-5</li>
+                </ul>
+                <h1>title-1</h1>
+                <p class="author">author-1</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, porro!</p>
+            </article>
+            <article class="titles">
+                <h1>title-2</h1>
+                <p class="author">author-2</p>
+                <p>Aliquid veniam illo unde voluptatibus quidem atque, nostrum explicabo aperiam?</p>
+            </article>
+            <article class="titles">
+                <h1>title-3</h1>
+                <p class="author">author-3</p>
+                <p>Iure cupiditate inventore commodi soluta pariatur quibusdam perferendis, veniam beatae?</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        
+        document.body.style.backgroundColor = 'blue';
+        document.querySelector('h1').setAttribute('title' , 'Title Header');
+        var authors = document.getElementsByClassName('author');
+        for(var i = 0; i < authors.length; i++)
+        {
+            var element = authors[i];
+            element.innerHTML = 'lekhok' + (i+1);
+            element.style.color = 'red';
+            element.style.backgroundColor = 'lightblue';
+        }
+        var title = document.querySelectorAll('.titles h1');
+        for(var i = 0; i < title.length; i++)
+        {
+            var element = title[i];
+            element.innerHTML = 'lekhok' + (i+1);
+            element.style.color = 'red';
+            element.style.backgroundColor = 'lightblue';
+        }
+        const ul = document.getElementById('items');
+        const li = document.createElement('li');
+        li.innerHTML = 'Brand new Gift';
+        ul.appendChild(li);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript Object Notation</h1>
+    <ul id="users-container">
+
+    </ul>
+    <input id="title" type="text" placeholder="title">
+    <br>
+    <input id="body" type="text" placeholder="body">
+    <br>
+    <button id="submit">Submit</button>
+    <script>
+
+        // const user = { id = 21, name ='Pankoj' };
+        // const userJson = JSON.stringify(user);
+        // console.log(user);
+
+        // const jsonUser = JSON.parse(userJson);
+        // console.log(jsonUser);
+        // fetch('https://jsonplaceholder.typicode.com/users')
+        //     .then(response => response.json())
+        //     .then(json => displayUser(json))
+        //     // .catch(error => console.log(error))
+
+        // function displayUser(users){
+        //     const userNames =users.map(user => user.username);
+        //     const ul = document.getElementById('users-container');
+        //     for(let i = 0; i<userNames.length; i++){
+        //         const username = userNames[i];
+        //         const li = document.createElement('li');
+        //         li.innerText = username;
+        //         ul.appendChild(li);
+        //     }
+        // }
+        document.getElementById('submit').addEventListener('click', function(){
+            const title = document.getElementById('title');
+            const bodyContent = document.getElementById('body');
+            const post = { title:title, body:bodyContent};
+            postTOServer(post); 
+        })
+
+        function postTOServer(post){
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify(post),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+
+        }
+
+    </script>
+</body>
+
+</html>

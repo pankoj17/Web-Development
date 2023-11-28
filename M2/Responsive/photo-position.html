@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .frame {
+            width: 300px;
+            height: 225px;
+            border: 10px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+        }
+        .photo img{
+            width: 100%;
+        }
+        .detail{
+            position: absolute;
+            display: none;
+            width: 300px;
+            height: 225px;
+            top: 0;
+        }
+        .frame:hover .detail{
+            display: block;
+            background-color: yellow;
+        }
+        .frame:hover .detail h3{
+            text-align: center;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <section class="photo-album">
+         <div class="frame">
+             <div class="photo">
+                <img src="tiger.jpg" alt="">
+             </div>
+             <div class="detail">
+                 <h3>Royal Bengal Tiger</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero temporibus placeat illo quae laudantium aspernatur?</p>
+             </div>
+         </div>
+         <div class="frame">
+            <div class="photo">
+               <img src="tiger.jpg" alt="">
+            </div>
+            <div class="detail">
+                <h3>Royal Bengal Tiger</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero temporibus placeat illo quae laudantium aspernatur?</p>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="photo">
+               <img src="tiger.jpg" alt="">
+            </div>
+            <div class="detail">
+                <h3>Royal Bengal Tiger</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero temporibus placeat illo quae laudantium aspernatur?</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
